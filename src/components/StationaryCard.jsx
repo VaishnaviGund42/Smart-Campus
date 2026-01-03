@@ -12,7 +12,7 @@ function StationaryCard({ image, name, description, price, addToCart, id }) {
 
   return (
     
-    <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 w-80 flex flex-col">
+    <div className="bg-white rounded-xl shadow-md hover:shadow-lg p-4 flex flex-col justify-between h-130 w-64">
       
       
       <img

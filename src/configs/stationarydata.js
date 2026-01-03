@@ -1,4 +1,16 @@
 import notebook from "../assets/notebook.png";
+import instrumentBox from "../assets/instruments-box.png";
+import calculator from "../assets/calculater.png";
+import sheets from "../assets/sheet.png";
+import bluepen from "../assets/pen.png";
+import mechanicalPencil from "../assets/mechanical-pencil.png";
+import highlighter from "../assets/highlighter.png";
+import geometryBox from "../assets/geometry-box.png";
+import stickyNotes from "../assets/sticky-notes-pack.png";
+import fileFolder from "../assets/file-folder.png";
+import coloredPencils from "../assets/color-pencil.png";
+import glueStick from "../assets/gluestick.png";
+import assignmentBook from "../assets/assignment.png";
 
 const stationarydata = [
   {
@@ -6,18 +18,18 @@ const stationarydata = [
     name: "Classmate Notebook",
     description: "200 pages ruled notebook ideal for engineering students",
     price: 120,
-    discount: 10,            // ✅ 10% discount
+    discount: 10,           
     image: notebook,
     category: "Stationery",
     quantity: 1,
   },
   {
     id: 2,
-    name: "Engineering Drawing Instruments Box",
+    name: " Instruments Box",
     description: "Complete set including compass, divider, scale, and pencil",
     price: 350,
     discount: 5,
-    image: "/images/stationery/instrument-box.jpg",
+    image: instrumentBox,
     category: "Stationery",
     quantity: 1,
   },
@@ -27,17 +39,28 @@ const stationarydata = [
     description: "Casio scientific calculator approved for exams",
     price: 999,
     discount: 15,
-    image: "/images/stationery/calculator.jpg",
+    image: calculator,
     category: "Stationery",
     quantity: 1,
   },
+     {
+    id: 13,
+    name: "Glue Stick",
+    description: "Non-toxic glue stick for paper and lightweight projects",
+    price: 50,
+    discount: 0,
+    image: glueStick,
+    category: "Stationery",
+    quantity: 1,
+  },
+
   {
     id: 4,
     name: "A4 Drawing Sheets (Pack of 20)",
     description: "High quality sheets for engineering graphics",
     price: 180,
     discount: 8,
-    image: "/images/stationery/drawing-sheets.jpg",
+    image: sheets,
     category: "Stationery",
     quantity: 1,
   },
@@ -46,8 +69,8 @@ const stationarydata = [
     name: "Blue Ball Pen (Pack of 10)",
     description: "Smooth writing ball pens for daily use",
     price: 90,
-    discount: 0,            // ✅ no discount
-    image: "/images/stationery/pen.jpg",
+    discount: 0,           
+    image: bluepen ,
     category: "Stationery",
     quantity: 1,
   },
@@ -57,7 +80,7 @@ const stationarydata = [
     description: "0.5mm mechanical pencil with refill",
     price: 75,
     discount: 5,
-    image: "/images/stationery/mech-pencil.jpg",
+    image: mechanicalPencil,
     category: "Stationery",
     quantity: 1,
   },
@@ -67,7 +90,7 @@ const stationarydata = [
     description: "Set of 5 neon color highlighters",
     price: 150,
     discount: 10,
-    image: "/images/stationery/highlighter.jpg",
+    image: highlighter,
     category: "Stationery",
     quantity: 1,
   },
@@ -77,7 +100,7 @@ const stationarydata = [
     description: "Student geometry box with all tools",
     price: 130,
     discount: 5,
-    image: "/images/stationery/geometry-box.jpg",
+    image:geometryBox,
     category: "Stationery",
     quantity: 1,
   },
@@ -87,7 +110,7 @@ const stationarydata = [
     description: "Colorful sticky notes for reminders",
     price: 60,
     discount: 0,
-    image: "/images/stationery/sticky-notes.jpg",
+    image: stickyNotes,
     category: "Stationery",
     quantity: 1,
   },
@@ -97,62 +120,30 @@ const stationarydata = [
     description: "Plastic file folder for documents",
     price: 50,
     discount: 0,
-    image: "/images/stationery/file.jpg",
+    image: fileFolder,
     category: "Stationery",
     quantity: 1,
   },
 
-  // 📚 TEXTBOOKS
   {
-    id: 101,
-    name: "Engineering Mathematics",
-    description: "Covers calculus, algebra, and probability",
-    price: 499,
-    discount: 20,
-    image: "/images/books/engineering-maths.jpg",
-    category: "Textbook",
-    quantity: 1,
-  },
-  {
-    id: 102,
-    name: "Data Structures & Algorithms",
-    description: "Essential DSA concepts with examples",
-    price: 549,
-    discount: 15,
-    image: "/images/books/dsa.jpg",
-    category: "Textbook",
-    quantity: 1,
-  },
-  {
-    id: 103,
-    name: "Circuit Analysis",
-    description: "Fundamentals of electrical circuits",
-    price: 399,
-    discount: 10,
-    image: "/images/books/circuit-analysis.jpg",
-    category: "Textbook",
-    quantity: 1,
-  },
-  {
-    id: 104,
-    name: "Engineering Graphics",
-    description: "Technical drawing and CAD basics",
-    price: 299,
+    id: 12,
+    name: "Colored Pencils (Set of 12)",
+    description: "Vibrant colored pencils for diagrams and creative work",
+    price: 120,
     discount: 5,
-    image: "/images/books/engineering-graphics.jpg",
-    category: "Textbook",
+    image: coloredPencils,
+    category: "Stationery",
     quantity: 1,
   },
   {
-    id: 105,
-    name: "Operating Systems",
-    description: "Processes, memory, and file systems",
-    price: 579,
-    discount: 18,
-    image: "/images/books/os.jpg",
-    category: "Textbook",
-    quantity: 1,
-  },
-];
+  id: 21,
+  name: "Assignment Book",
+  description: "Planner notebook to track assignments, deadlines, and projects",
+  price: 120,
+  discount: 5,
+  image: assignmentBook,
+  category: "Stationery",
+  quantity: 1,
+}];
 
 export default stationarydata;
