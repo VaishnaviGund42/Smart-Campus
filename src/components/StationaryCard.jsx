@@ -5,8 +5,6 @@ import {useState} from 'react'
 import toast, {Toaster} from 'react-hot-toast';
 
 
-
-
 function StationaryCard({ image, name, description, price, discount, addToCart, id }) {
     const [quantity,setQuantity]=useState(1);
 
