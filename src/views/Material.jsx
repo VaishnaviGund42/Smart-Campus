@@ -43,11 +43,11 @@ function Material() {
           onChange={(e) => setDepartment(e.target.value)}
         >
           <option value="All">All Departments</option>
-          <option>CSE</option>
+          <option>CS</option>
           <option>ECE</option>
           <option>ME</option>
-          <option>CE</option>
-          <option>EE</option>
+          <option>Chemical</option>
+          <option>Civil</option>
         </select>
 
         <select
@@ -58,7 +58,7 @@ function Material() {
           <option value="2022">2022</option>
           <option value="2023">2023</option>
           <option value="2024">2024</option>
-          <option value="2025">2025</option>
+          
         </select>
 
         <select
@@ -68,8 +68,6 @@ function Material() {
           <option value="All">All Semesters</option>
           <option>Sem 3</option>
           <option>Sem 4</option>
-          <option>Sem 5</option>
-          <option>Sem 7</option>
         </select>
       </div>
 
