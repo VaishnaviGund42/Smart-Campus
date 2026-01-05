@@ -4,6 +4,10 @@ import ai3 from "../assets/quetionpaper/May_Jun_2024-ai.pdf"
 import cc1 from "../assets/quetionpaper/Nov_Dec_2022-cc.pdf"
 import cc2 from "../assets/quetionpaper/May_Jun_2023-cc.pdf"
 import cc3 from "../assets/quetionpaper/March_2024-cc.pdf"
+import ts1 from "../assets/quetionpaper/May_Jun_2022-ts.pdf"
+import ts2 from "../assets/quetionpaper/May_Jun_2023-ts.pdf"
+import ts3 from "../assets/quetionpaper/May_Jun_2024-ts.pdf"
+
 
 
 
@@ -239,7 +243,7 @@ const materialdata = [
   // ================= ME =================
   {
     id: 17,
-    title: "Thermodynamics Question Paper",
+    title: "Design of transmission System Question Paper",
     description: "University Examination",
     type: "PYQ",
     department: "ME",
@@ -249,11 +253,11 @@ const materialdata = [
     examType: "End Sem",
     downloads: 160,
     size: "1.2 MB",
-    fileUrl: "/files/me-thermo-sem3-2022.pdf",
+    fileUrl: ts1,
   },
   {
     id: 18,
-    title: "Thermodynamics Question Paper",
+    title: "Design of transmission System Question Paper",
     description: "University Examination",
     type: "PYQ",
     department: "ME",
@@ -263,11 +267,11 @@ const materialdata = [
     examType: "End Sem",
     downloads: 150,
     size: "1.1 MB",
-    fileUrl: "/files/me-thermo-sem4-2022.pdf",
+    fileUrl: ts2,
   },
   {
     id: 19,
-    title: "Thermodynamics Question Paper",
+    title: "Design of transmission System Question Paper",
     description: "University Examination",
     type: "PYQ",
     department: "ME",
@@ -277,7 +281,7 @@ const materialdata = [
     examType: "End Sem",
     downloads: 180,
     size: "1.3 MB",
-    fileUrl: "/files/me-thermo-sem3-2023.pdf",
+    fileUrl: ts3,
   },
   {
     id: 20,
