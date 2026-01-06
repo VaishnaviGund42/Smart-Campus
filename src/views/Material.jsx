@@ -20,8 +20,7 @@ function Material() {
 
   return (
     <div className="p-6  bg-red-100">
-
-      <h1 className="text-3xl font-bold">
+      <h1 className="text-blue-600 font-extrabold text-3xl md:text-4xl justify-center item-center">
         Previous Year Question Papers
       </h1>
       <p className="text-gray-500 mt-1">
