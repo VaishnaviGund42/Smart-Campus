@@ -1,16 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 const ManageFaculty = () => {
-  const [faculty, setFaculty] = useState([]);
+  const [faculty, setFaculty] = useState(() => JSON.parse(localStorage.getItem("faculty")) || []);
   const [form, setForm] = useState({ name: "", email: "", role: "faculty" });
   const [editingIndex, setEditingIndex] = useState(null);
-
-  useEffect(() => {
-    const saved = JSON.parse(localStorage.getItem("faculty")) || [];
-    setFaculty(saved);
-  }, []);
 
   const saveToLocalStorage = (data) => {
     localStorage.setItem("faculty", JSON.stringify(data));

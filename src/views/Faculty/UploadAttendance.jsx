@@ -1,25 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 const UploadAttendance = () => {
   const [date, setDate] = useState("");
-  const [students, setStudents] = useState([]);
-  const [attendanceData, setAttendanceData] = useState({});
-
-  // Fetch students
-  useEffect(() => {
-    const savedStudents = JSON.parse(localStorage.getItem("students")) || [];
-    setStudents(savedStudents);
-
-    // Initialize attendance
+  const students = JSON.parse(localStorage.getItem("students")) || [];
+  const [attendanceData, setAttendanceData] = useState(() => {
+    const savedAttendance = JSON.parse(localStorage.getItem("attendance")) || {};
     const initialAttendance = {};
-    savedStudents.forEach((s) => {
-      initialAttendance[s.email] =
-        (JSON.parse(localStorage.getItem("attendance"))?.[s.email]?.status || "Present");
+    students.forEach((s) => {
+      initialAttendance[s.email] = savedAttendance[s.email]?.status || "Present";
     });
-    setAttendanceData(initialAttendance);
-  }, []);
+    return initialAttendance;
+  });
 
   const handleAttendanceChange = (email, value) => {
     setAttendanceData({ ...attendanceData, [email]: value });

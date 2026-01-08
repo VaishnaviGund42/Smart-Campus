@@ -1,16 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 const ManageSubjects = () => {
-  const [subjects, setSubjects] = useState([]);
+  const [subjects, setSubjects] = useState(() => JSON.parse(localStorage.getItem("subjects")) || []);
   const [newSubject, setNewSubject] = useState("");
-
-  // Load saved subjects from localStorage
-  useEffect(() => {
-    const savedSubjects = JSON.parse(localStorage.getItem("subjects")) || [];
-    setSubjects(savedSubjects);
-  }, []);
 
   // Add new subject
   const handleAdd = (e) => {

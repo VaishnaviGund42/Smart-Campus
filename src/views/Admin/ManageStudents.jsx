@@ -1,17 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 const ManageStudents = () => {
-  const [students, setStudents] = useState([]);
+  const [students, setStudents] = useState(() => JSON.parse(localStorage.getItem("students")) || []);
   const [form, setForm] = useState({ name: "", email: "", role: "student" });
   const [editingIndex, setEditingIndex] = useState(null);
-
-  // Load students from localStorage
-  useEffect(() => {
-    const saved = JSON.parse(localStorage.getItem("students")) || [];
-    setStudents(saved);
-  }, []);
 
   const saveToLocalStorage = (data) => {
     localStorage.setItem("students", JSON.stringify(data));

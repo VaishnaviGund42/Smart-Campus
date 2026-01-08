@@ -1,25 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 const UploadMarks = () => {
   const [subject, setSubject] = useState("");
-  const [students, setStudents] = useState([]);
-  const [marksData, setMarksData] = useState({});
-
-  // Fetch students from localStorage
-  useEffect(() => {
-    const savedStudents = JSON.parse(localStorage.getItem("students")) || [];
-    setStudents(savedStudents);
-
-    // Initialize marksData for each student
+  const students = JSON.parse(localStorage.getItem("students")) || [];
+  const [marksData, setMarksData] = useState(() => {
+    const savedMarks = JSON.parse(localStorage.getItem("marks")) || {};
     const initialMarks = {};
-    savedStudents.forEach((s) => {
-      initialMarks[s.email] =
-        (JSON.parse(localStorage.getItem("marks"))?.[s.email]?.marks || "");
+    students.forEach((s) => {
+      initialMarks[s.email] = savedMarks[s.email]?.marks || "";
     });
-    setMarksData(initialMarks);
-  }, []);
+    return initialMarks;
+  });
 
   // Handle input changes
   const handleMarksChange = (email, value) => {
