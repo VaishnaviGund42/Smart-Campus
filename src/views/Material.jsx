@@ -1,6 +1,8 @@
 import { useState } from "react";
 import materialdata from "../configs/materialdata";
 import MaterialCard from "../components/MaterialCard";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Material() {
   const [search, setSearch] = useState("");
@@ -19,6 +21,10 @@ function Material() {
   );
 
   return (
+    <>
+    <Navbar />
+  
+    
     <div className="p-6  bg-[#F8FAFF] font-sans">
       <h1 className="text-black-600 font-extrabold text-4xl md:text-4xl justify-center item-center">
         Previous Year Question Papers
@@ -88,12 +94,13 @@ function Material() {
       fileUrl={item.fileUrl}
     />
   ))}
+   <Footer />
 </div>
-
-
-
     </div>
+      </>
+   
   );
 }
+
 
 export default Material;

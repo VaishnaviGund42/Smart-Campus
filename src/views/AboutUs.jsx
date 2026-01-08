@@ -7,6 +7,8 @@ import CollegeImage from './../assets/collegeimage.jpg';
 import Button from './../components/Button.jsx'
 import { useState, useEffect } from "react";
 import toast, { Toaster } from 'react-hot-toast';
+import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";  
 
 function About() {
 
@@ -50,6 +52,8 @@ function About() {
   }, [addReview.name]);
 
   return (
+    <>
+    <Navbar />
     <div className="text-xl bg-[#F8FAFF] font-sans">
 
       <h1 className="text-black-600 font-extrabold text-4xl md:text-4xl text-center mb-10">
@@ -214,6 +218,8 @@ function About() {
       </div>
       <Toaster />
     </div>
+    <Footer />
+    </>
   );
 }
 

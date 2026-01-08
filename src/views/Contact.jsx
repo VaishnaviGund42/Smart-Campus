@@ -8,6 +8,8 @@ import Instagram from './../assets/insta.png'
 import Linkedin from './../assets/linkedin.png';
 import Youtube from './../assets/youtube.png';
 import Twitter from './../assets/twitters.png'
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
 
 function Contact() {
 
@@ -58,8 +60,10 @@ function Contact() {
   }
 
   return (
+    <>
+    <Navbar />
     <div className='bg-[#F8FAFF] font-sans'>
-      <h1 className='text-black-600 font-extrabold text-4xl md:text-4xl text-center'>Our Contact detials</h1>
+      <h1 className='text-black-600 font-extrabold text-4xl md:text-4xl text-center'>Our Contact details</h1>
 
       <p className="text-center max-w-3xl mx-auto mt-4 text-gray-700 md:text-lg">
         We are here to help you with any questions, enquiries, or support related to
@@ -170,7 +174,9 @@ function Contact() {
       </div>
 
       <Toaster />
+      <Footer />
     </div>
+    </>
   )
 }
 
