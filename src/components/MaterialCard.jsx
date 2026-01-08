@@ -12,7 +12,7 @@ function MaterialCard({
   fileUrl
 }) {
   return (
-    <div className="w-full sm:w-80 max-w-[22rem] bg-white rounded-xl border-white p-5 shadow-sm hover:shadow-xl transition">
+    <div className="w-full sm:w-80  bg-white rounded-xl border-white p-5 shadow-sm hover:shadow-xl transition">
       
       <span className="text-xs font-semibold border px-2 py-1 rounded-md">
         {type}
@@ -20,7 +20,7 @@ function MaterialCard({
 
       <h3 className="font-semibold text-lg mt-3">{title}</h3>
       <p className="text-gray-500 text-sm mt-1">{description}</p>
-
+    
       <div className="flex flex-wrap gap-2 mt-3">
         <span className="bg-gray-100 px-2 py-1 text-xs rounded">{department}</span>
         <span className="bg-gray-100 px-2 py-1 text-xs rounded">{semester}</span>
