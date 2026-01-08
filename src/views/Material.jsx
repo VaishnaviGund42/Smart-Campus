@@ -71,11 +71,27 @@ function Material() {
       </div>
 
 
-      <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mt-10 w-full">
-        {filteredMaterials.map(item => (
-          <MaterialCard key={item.id} data={item} />
-        ))}
-      </div>
+    <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mt-10 w-full">
+  {filteredMaterials.map(item => (
+    <MaterialCard
+      key={item.id}
+      title={item.title}
+      description={item.description}
+      type={item.type}
+      department={item.department}
+      semester={item.semester}
+      subject={item.subject}
+      year={item.year}
+      examType={item.examType}
+      downloads={item.downloads}
+      size={item.size}
+      fileUrl={item.fileUrl}
+    />
+  ))}
+</div>
+
+
+
     </div>
   );
 }
