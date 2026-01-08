@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button.jsx";
+import Button from "./Button.jsx"
 import { Plus,Minus } from 'lucide-react';
 import {useState} from 'react'
 import toast, {Toaster} from 'react-hot-toast';
