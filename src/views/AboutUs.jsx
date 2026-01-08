@@ -3,7 +3,7 @@ import { PRINCIPLE_DATA } from "./../configs/aboutus/principle.js";
 import { REVIEW_DATA } from "./../configs/aboutus/review.js";
 import Review from "./../components/Aboutus/Review.jsx";
 import Principle from "./../components/Aboutus/Principle.jsx"
-import CollegeImage from './../assets/collegeimage.jpg';
+import CollegeImage from './../assets/collegess.jpg';
 import Button from './../components/Button.jsx'
 import { useState, useEffect } from "react";
 import toast, { Toaster } from 'react-hot-toast';
@@ -61,10 +61,12 @@ function About() {
         backgroundImage: `url(${CollegeImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        height: "300px",
+        height: "400px",
+        objectFit:"cover",
+        backgroundSsize: "cover"
       }}>
 
-        <p className="text-center font-semibold max-w-4xl m-auto md:pt-20 pt-5">
+        <p className="text-center text-white text-3xl font-semibold max-w-4xl m-auto md:pt-20 pt-5">
           Smart Campus is a modern digital platform designed to simplify campus
           management and improve communication between students, faculty, and
           administration.
