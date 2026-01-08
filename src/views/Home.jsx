@@ -10,11 +10,11 @@ const Home = () => {
     <>
       <Navbar />
 
-      {/* Hero Section */}
+      
       <section className="bg-[#F8FAFF] font-sans py-12 sm:py-16 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           
-          {/* Left Content */}
+         
           <div className="text-center md:text-left">
             <h1 className="font-extrabold text-2xl sm:text-3xl md:text-4xl text-gray-800 mb-4">
               Smart Campus Management System
@@ -33,7 +33,7 @@ const Home = () => {
             </button>
           </div>
 
-          {/* Right Image */}
+          
           <div className="flex justify-center">
             <img
               src={campus}
@@ -44,7 +44,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+     
       <section className="bg-[#F8FAFF] font-sans py-12 sm:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="font-extrabold text-2xl sm:text-3xl md:text-4xl text-center mb-10 text-gray-800">
@@ -53,7 +53,7 @@ const Home = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             
-            {/* Card 1 */}
+         
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
               <h3 className="font-extrabold text-xl sm:text-2xl text-gray-800 mb-2">
                 Student Portal
@@ -63,7 +63,7 @@ const Home = () => {
               </p>
             </div>
 
-            {/* Card 2 */}
+            
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
               <h3 className="font-extrabold text-xl sm:text-2xl text-gray-800 mb-2">
                 Faculty Dashboard
@@ -73,7 +73,7 @@ const Home = () => {
               </p>
             </div>
 
-            {/* Card 3 */}
+            
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
               <h3 className="font-extrabold text-xl sm:text-2xl text-gray-800 mb-2">
                 Admin Control

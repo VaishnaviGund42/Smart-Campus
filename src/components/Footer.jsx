@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <footer className="bg-blue-900 text-white mt-16">
       
-      {/* Top Section */}
+      
       <div className="max-w-7xl mx-auto px-6 py-14">
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
 
-          {/* About */}
+          
           <div>
             <h3 className="text-lg font-bold mb-4">About Smart Campus</h3>
             <p className="text-sm text-gray-300 leading-relaxed">
@@ -20,7 +20,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+         
           <div>
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm text-gray-300">
@@ -35,7 +35,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Campus Modules */}
+         
           <div>
             <h3 className="text-lg font-bold mb-4">Campus Modules</h3>
             <ul className="space-y-2 text-sm text-gray-300">
@@ -47,7 +47,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Support */}
+         
           <div>
             <h3 className="text-lg font-bold mb-4">Support</h3>
             <ul className="space-y-2 text-sm text-gray-300">
@@ -58,7 +58,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Follow Us */}
+        
           <div>
             <h3 className="text-lg font-bold mb-4">Follow Us</h3>
             <div className="flex gap-4 text-xl mt-5">
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Section */}
+      
       <div className="border-t border-blue-700 py-5 text-center text-sm text-gray-400">
         <p>© 2026 Smart Campus Management System</p>
         <p className="mt-1">Designed for Academic Excellence 🎓</p>

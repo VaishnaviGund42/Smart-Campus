@@ -20,7 +20,7 @@ const Navbar = ({ refreshCart }) => {
     );
 
     setCartCount(totalCount);
-  }, [refreshCart]); // ✅ SAME LOGIC AS VEGGIEHUB
+  }, [refreshCart]); 
 
   return (
     <nav className="bg-blue-600 text-white px-5 py-4">
