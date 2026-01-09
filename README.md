@@ -1,7 +1,7 @@
 # 🚀 Smart Campus – College Management & Student Resource Platform  
 
 ## 👉 Live Website  
-🌐 [https://your-smartcampus-link.netlify.app/](https://your-smartcampus-link.netlify.app/)  
+🌐 [https://your-smartcampus-link.netlify.app/](https://smartcampusrtc.netlify.app/)  
 
 ---
 
@@ -78,9 +78,9 @@ It provides access to **previous year question papers, a stationery store, atten
   <img src="https://contrib.rocks/image?repo=pratiksha950/ICP-12-Group-Project-4-React-SmartCampus" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
+
 ---
-Status:
+## Netlify Status:
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0ec2d213-1bbc-4268-b290-710cefbbd66d/deploy-status)](https://app.netlify.com/projects/smartcampusrtc/deploys)
 
