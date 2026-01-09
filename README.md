@@ -1,7 +1,7 @@
 # 🚀 Smart Campus – College Management & Student Resource Platform  
 
 ## 👉 Live Website  
-🌐 [https://your-smartcampus-link.netlify.app/](https://your-smartcampus-link.netlify.app/)  
+🌐 [https://your-smartcampus-link.netlify.app/](https://smartcampusrtc.netlify.app/)  
 
 ---
 
